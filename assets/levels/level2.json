@@ -1,0 +1,80 @@
+{
+  "id": "level2",
+  "name": "Fortress Caves and Port",
+  "size": { "width": 3600, "height": 1280 },
+  "playerSpawn": { "x": 100, "y": 930 },
+  "music": "fort",
+  "timer": 220,
+  "goal": { "x": 3400, "y": 660, "width": 80, "height": 170 },
+  "background": {
+    "layers": [
+      {
+        "speed": 0.12,
+        "verticalSpeed": 0.02,
+        "color": "rgba(255,255,255,0.12)",
+        "shapes": [
+          { "type": "hill", "x": 340, "y": 180, "width": 340, "height": 80 },
+          { "type": "hill", "x": 1300, "y": 210, "width": 380, "height": 90 },
+          { "type": "hill", "x": 2560, "y": 200, "width": 420, "height": 85 }
+        ]
+      },
+      {
+        "speed": 0.26,
+        "verticalSpeed": 0.07,
+        "color": "rgba(71,91,120,0.7)",
+        "shapes": [
+          { "type": "rect", "x": 0, "y": 480, "width": 660, "height": 300 },
+          { "type": "waterfall", "x": 1410, "y": 250, "width": 90, "height": 380 },
+          { "type": "rect", "x": 2480, "y": 390, "width": 580, "height": 360 }
+        ]
+      },
+      {
+        "speed": 0.42,
+        "verticalSpeed": 0.1,
+        "color": "rgba(118,93,63,0.7)",
+        "shapes": [
+          { "type": "rect", "x": 220, "y": 610, "width": 300, "height": 220 },
+          { "type": "rect", "x": 1970, "y": 540, "width": 420, "height": 280 },
+          { "type": "rect", "x": 3120, "y": 470, "width": 340, "height": 320 }
+        ]
+      }
+    ]
+  },
+  "platforms": [
+    { "x": 0, "y": 990, "width": 420, "height": 220, "themeColor": "#76614e", "decor": "stone" },
+    { "x": 500, "y": 930, "width": 280, "height": 280, "themeColor": "#665543", "decor": "stone" },
+    { "x": 860, "y": 860, "width": 300, "height": 350, "themeColor": "#584634", "decor": "wood" },
+    { "x": 1260, "y": 780, "width": 250, "height": 430, "themeColor": "#51473c", "decor": "stone" },
+    { "x": 1600, "y": 920, "width": 220, "height": 290, "themeColor": "#4a4139", "decor": "stone" },
+    { "x": 1900, "y": 850, "width": 300, "height": 360, "themeColor": "#664f3b", "decor": "wood" },
+    { "x": 2310, "y": 780, "width": 240, "height": 430, "themeColor": "#53483e", "decor": "stone" },
+    { "x": 2620, "y": 910, "width": 300, "height": 300, "themeColor": "#6d573f", "decor": "wood" },
+    { "x": 3000, "y": 820, "width": 500, "height": 390, "themeColor": "#78624d", "decor": "stone" },
+    { "x": 1190, "y": 670, "width": 120, "height": 18, "themeColor": "#a36f43", "decor": "wood" },
+    { "x": 2070, "y": 720, "width": 110, "height": 18, "themeColor": "#a36f43", "decor": "wood" },
+    { "x": 2840, "y": 760, "width": 110, "height": 18, "themeColor": "#a36f43", "decor": "wood" }
+  ],
+  "enemies": [
+    { "type": "GreenSoldier", "x": 620, "y": 880, "patrolRange": 100 },
+    { "type": "BlueSoldier", "x": 1000, "y": 810, "patrolRange": 150 },
+    { "type": "GreenSoldier", "x": 1740, "y": 870, "patrolRange": 90 },
+    { "type": "BlueSoldier", "x": 2420, "y": 730, "patrolRange": 160 },
+    { "type": "GreenSoldier", "x": 3210, "y": 770, "patrolRange": 120 }
+  ],
+  "collectibles": [
+    { "type": "Coin", "id": "l2_coin_1", "x": 310, "y": 950 },
+    { "type": "Coin", "id": "l2_coin_2", "x": 1110, "y": 820 },
+    { "type": "Coin", "id": "l2_coin_3", "x": 1230, "y": 630 },
+    { "type": "Coin", "id": "l2_coin_4", "x": 2110, "y": 680 },
+    { "type": "Coin", "id": "l2_coin_5", "x": 2890, "y": 720 },
+    { "type": "HealthPack", "id": "l2_health_1", "x": 1530, "y": 890, "amount": 2 },
+    { "type": "HealthPack", "id": "l2_health_2", "x": 3070, "y": 780, "amount": 1 },
+    { "type": "Key", "id": "l2_key_1", "x": 1980, "y": 810 },
+    { "type": "Chest", "id": "l2_chest_1", "x": 3320, "y": 790, "reward": { "score": 700, "coins": 6 } }
+  ],
+  "interactives": [
+    { "type": "Checkpoint", "id": "l2_checkpoint_1", "x": 930, "y": 796 },
+    { "type": "Checkpoint", "id": "l2_checkpoint_2", "x": 2360, "y": 716 },
+    { "type": "Door", "id": "l2_door_1", "x": 3345, "y": 744, "locked": true, "requiresKey": true }
+  ]
+}

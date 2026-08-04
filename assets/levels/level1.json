@@ -1,0 +1,78 @@
+{
+  "id": "level1",
+  "name": "Beachhead to Jungle Trail",
+  "size": { "width": 3200, "height": 1200 },
+  "playerSpawn": { "x": 120, "y": 880 },
+  "music": "beach",
+  "timer": 180,
+  "goal": { "x": 3020, "y": 770, "width": 60, "height": 140 },
+  "background": {
+    "layers": [
+      {
+        "speed": 0.15,
+        "verticalSpeed": 0.02,
+        "color": "rgba(255,255,255,0.18)",
+        "shapes": [
+          { "type": "hill", "x": 220, "y": 220, "width": 260, "height": 80 },
+          { "type": "hill", "x": 780, "y": 190, "width": 320, "height": 90 },
+          { "type": "hill", "x": 1490, "y": 210, "width": 280, "height": 70 }
+        ]
+      },
+      {
+        "speed": 0.3,
+        "verticalSpeed": 0.08,
+        "color": "rgba(46,132,89,0.55)",
+        "shapes": [
+          { "type": "hill", "x": 180, "y": 420, "width": 260, "height": 110 },
+          { "type": "hill", "x": 920, "y": 390, "width": 340, "height": 140 },
+          { "type": "waterfall", "x": 1680, "y": 310, "width": 70, "height": 280 },
+          { "type": "hill", "x": 2500, "y": 420, "width": 420, "height": 150 }
+        ]
+      },
+      {
+        "speed": 0.5,
+        "verticalSpeed": 0.12,
+        "color": "rgba(216,195,129,0.65)",
+        "shapes": [
+          { "type": "rect", "x": 0, "y": 620, "width": 700, "height": 240 },
+          { "type": "rect", "x": 2250, "y": 590, "width": 440, "height": 250 }
+        ]
+      }
+    ]
+  },
+  "platforms": [
+    { "x": 0, "y": 940, "width": 580, "height": 180, "themeColor": "#d4b06f", "decor": "sand" },
+    { "x": 620, "y": 910, "width": 280, "height": 210, "themeColor": "#6e5538", "decor": "grass" },
+    { "x": 960, "y": 850, "width": 230, "height": 270, "themeColor": "#6e5538", "decor": "grass" },
+    { "x": 1280, "y": 770, "width": 220, "height": 350, "themeColor": "#8f6b43", "decor": "wood" },
+    { "x": 1580, "y": 890, "width": 220, "height": 230, "themeColor": "#64503d", "decor": "grass" },
+    { "x": 1870, "y": 820, "width": 160, "height": 300, "themeColor": "#6e5538", "decor": "grass" },
+    { "x": 2080, "y": 750, "width": 260, "height": 370, "themeColor": "#795941", "decor": "wood" },
+    { "x": 2420, "y": 890, "width": 280, "height": 230, "themeColor": "#6e5538", "decor": "grass" },
+    { "x": 2760, "y": 840, "width": 260, "height": 280, "themeColor": "#d4b06f", "decor": "sand" },
+    { "x": 1160, "y": 660, "width": 120, "height": 20, "themeColor": "#a36f43", "decor": "wood" },
+    { "x": 1770, "y": 710, "width": 110, "height": 20, "themeColor": "#a36f43", "decor": "wood" },
+    { "x": 2270, "y": 630, "width": 110, "height": 20, "themeColor": "#a36f43", "decor": "wood" }
+  ],
+  "enemies": [
+    { "type": "GreenSoldier", "x": 780, "y": 860, "patrolRange": 90 },
+    { "type": "GreenSoldier", "x": 1710, "y": 840, "patrolRange": 75 },
+    { "type": "BlueSoldier", "x": 2530, "y": 840, "patrolRange": 130 }
+  ],
+  "collectibles": [
+    { "type": "Coin", "id": "l1_coin_1", "x": 260, "y": 870 },
+    { "type": "Coin", "id": "l1_coin_2", "x": 700, "y": 850 },
+    { "type": "Coin", "id": "l1_coin_3", "x": 1180, "y": 620 },
+    { "type": "Coin", "id": "l1_coin_4", "x": 1810, "y": 670 },
+    { "type": "Coin", "id": "l1_coin_5", "x": 2290, "y": 590 },
+    { "type": "HealthPack", "id": "l1_health_1", "x": 1420, "y": 730, "amount": 2 },
+    { "type": "Key", "id": "l1_key_1", "x": 2140, "y": 710 },
+    { "type": "Chest", "id": "l1_chest_1", "x": 2860, "y": 810, "reward": { "score": 450, "coins": 4 } }
+  ],
+  "interactives": [
+    { "type": "Checkpoint", "id": "l1_checkpoint_1", "x": 1030, "y": 786 },
+    { "type": "Checkpoint", "id": "l1_checkpoint_2", "x": 2140, "y": 686 },
+    { "type": "Door", "id": "l1_door_1", "x": 2920, "y": 764, "locked": true, "requiresKey": true },
+    { "type": "Switch", "id": "l1_switch_1", "x": 2460, "y": 870, "targetId": "l1_door_1" }
+  ]
+}
